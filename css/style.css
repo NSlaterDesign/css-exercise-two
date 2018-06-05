@@ -1,52 +1,121 @@
-body {
-  background-color: #ff0000;
-  color: #0000FF;
+.author,
+body,
+h1,
+h2,
+h3,
+li,
+p,
+ul {
+  color            : grey;
+  background-color : cream;
+  font-family      : sans-serif;
+  line-height      : 140%;
+}
+
+h1 {
+  color          : black;
+  text-transform : uppercase;
+  font-size      : 2em;
+  font-style     : bold;
+}
+
+h2 {
+  font-size : 1.5em;
+}
+
+h3 {
+  font-size   : 1.5em;
+  font-style  : italic;
+  line-height : 150%;
+}
+
+.author {
+  font-size  : 1em;
+  font-style : italic;
 }
 
 nav {
-  background-color: rgba(0,0,0,.5);
-  float: left;
-  position: fixed;
-  width: 100%;
+  position         : fixed;
+  width            : 100%;
+  float            : left;
+  background-color : grey;
 }
 
 .logo {
-  margin: 20px;
-  width: 100px;
+  width      : 100px;
+  margin     : 20px;
+  background : url(images/bloc-logo.png) no-repeat top left;
 }
 
 .large-pic {
-  width: 100%;
+  width : 100%;
 }
 
 .medium-pic {
-  width: 70%;
+  width      : 70%;
+  background : #fff url(images/kendrick-lamar.png) no-repeat top center;
 }
 
-.left, .right {
-  float: left;
-  width: 50%;
+.caption {
+  color       : blue;
+  font-size   : 1em;
+  font-style  : italic;
+  font-weight : lighter;
+}
+
+.left,
+.right {
+  width : 50%;
+  float : left;
 }
 
 .right {
-  float: right;
+  float           : right;
+  text-decoration : none;
 }
 
 ul {
-  list-style-type: none;
-  float: right;
+  float           : right;
+  list-style-type : none;
 }
 
 li {
-  float: right;
-  padding: 30px;
+  float   : right;
+  padding : 30px;
 }
 
+a {
+  text-decoration : none;
+}
+
+/* unvisited */
+a:link {
+  color : white;
+}
+
+
+/* visited */
+a:visited {
+  color : orange;
+}
+
+/* mouse over */
+
+a:hover {
+  color : orange;
+}
+
+/* selected */
+a:active {
+  color : yellow;
+}
+
+
 article {
-  padding-top: 100px;
+  padding-top : 100px;
 }
 
 .container {
-  margin: 0 auto;
-  width: 50%;
+  width  : 50%;
+  margin : 0 auto;
 }
